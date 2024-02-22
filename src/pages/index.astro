@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Link from '../components/Link';
+import Test from '../components/Test';
+import Test2 from '../components/Test2';
+---
+
+<Layout title="Welcome to Astro.">
+	Hello World
+
+	<!-- Error when sending children props to preact comp. -->
+	<Link href="http://google.com">GO Home</Link>
+
+	<!-- This does not generate errors -->
+	<Test/>
+
+	<!-- This does not generate errors -->
+	<Test2 message="hello world"/>
+</Layout>
